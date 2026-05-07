@@ -1,6 +1,35 @@
-<div class="tabs">
-  <button onclick="showTab('en')">English</button>
-  <button onclick="showTab('zh')">中文</button>
-</div>
-<div id="en" class="tab-content">英文文档内容...</div>
-<div id="zh" class="tab-content">中文文档内容...</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .tab { display: none; }
+        .tab.active { display: block; }
+        button { padding: 8px 16px; margin-right: 8px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="showTab('en')">English</button>
+        <button onclick="showTab('zh')">中文</button>
+    </div>
+    
+    <div id="en" class="tab active">
+        <h1>Project Documentation (English)</h1>
+        <p>Your English documentation here...</p>
+    </div>
+    
+    <div id="zh" class="tab">
+        <h1>项目文档（中文）</h1>
+        <p>你的中文文档内容...</p>
+    </div>
+    
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
