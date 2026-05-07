@@ -1,5 +1,7 @@
 # Component Rank
 
+> [English](README.md) | [中文](README_ZH.md)
+
 A Python implementation of the **Component Rank** algorithm from:
 
 > Inoue, K., Yokomori, R., Fujiwara, H., Yamamoto, T., Matsushita, M., & Kusumoto, S. (2003).
