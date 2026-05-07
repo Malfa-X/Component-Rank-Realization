@@ -1,5 +1,7 @@
 # Component Rank（组件排名）
 
+> [English](README.md) | [中文](README_ZH.md)
+
 本项目是以下论文中 **Component Rank** 算法的 Python 实现：
 
 > Inoue, K., Yokomori, R., Fujiwara, H., Yamamoto, T., Matsushita, M., & Kusumoto, S. (2003).
